@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 750px)" href="css/mobile.css">
+  <title>Global Adventures</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id ="navbar">
+      <img class="logo" src="./images/globe.svg" alt="Globl Adventures">
+      <p><span class="logo-text">Global</span> Adventures</p>
+    <ul>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>     
+  </nav>
+
+  <!-- Header: Showcase -->
+  <header id="showcase">
+    <div class="container">
+      <h1>Your Adventure Starts Here</h1>
+      <div class="showcase-container">
+        <div class="slider"></div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <ul class="list">
+              <li><a href="#"><i class="fas fa-chevron-right"></i> 24/7 Customer Support</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Meet Our Expert Team</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Make An Enquiry</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Travel Insurance</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Email Subscriptions</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Frequently Asked Questions</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+            </ul>
+        </div> 
+      </div>
+    </div>
+  </header>
+
+  <!-- Section: Forms -->
+  <section id="information">
+    <div class="container">
+      <div class="preference">
+        <p>Talk to our travel expert to personalise your trip!</p>
+      </div>
+      <div id="help">
+        <button type="button" class="buttonone">Need Help?</button>
+      </div>
+    <!-- Help Section: Phase One -->
+    <div class="bg-help phaseone-help">
+      <div class="help-content">
+        <div class="close">+</div>
+        <div class="helpOne">
+          <h4>Personal Details</h4>
+            <h5 class="firstname-help">First Name <i class="fas fa-chevron-down"></i></h5>
+            <p class="firstname-ans">Your first name field should not include a number or cannot be blank.</p>
+            <h5 class="lastname-help">Last Name <i class="fas fa-chevron-down"></i></h5>
+            <p class="lastname-ans">Your last name field should not include a number or cannot be blank.</p>
+            <h5 class="birthdate-help">Birthdate <i class="fas fa-chevron-down"></i></h5>
+            <p class="birthdate-ans">Your birthdate field must not be greater than or the same as today's date and cannot be blank.</p>
+            <h5 class="occupation-help">Occupation <i class="fas fa-chevron-down"></i></h5>
+            <p class="occupation-ans">Occupation field should not include a number or cannot be blank.</p>
+            <h5 class="gender-help">Gender <i class="fas fa-chevron-down"></i></h5>
+            <p class="gender-ans">Gender field cannot be blank, please choose your gender.</p>
+            <h5 class="budget-help">Budget <i class="fas fa-chevron-down"></i></h5>
+            <p class="budget-ans">Budget field cannot be blank, please choose your preferred budget.</p>
+            <h5 class="email-help">Email <i class="fas fa-chevron-down"></i></h5>
+            <p class="email-ans">Your email must be a valid email address and must include "@".</p>
+            <h5 class="phone-help">Phone <i class="fas fa-chevron-down"></i></h5>
+            <p class="phone-ans">Your phone number must be 10 digits and starts with 0.</p>
+            <h5 class="dietary-help">Dietary <i class="fas fa-chevron-down"></i></h5>
+            <p class="dietary-ans">If you choose "Yes", dietary options will be displayed.</p>
+            <h5 class="needs-help">Needs <i class="fas fa-chevron-down"></i></h5>
+            <p class="needs-ans">If you choose "Yes", please fill your special needs in the option displayed.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Help Section: Phase Two -->
+    <div id="help">
+      <button type="button" class="buttontwo">Need Help?</button>
+    </div>
+    <div class="bg-help phasetwo-help">
+      <div class="help-content">
+        <div class="close">+</div>
+        <div class="helpTwo">
+          <h4>Preferred Destination</h4>
+            <h5 class="destination-help">Destination <i class="fas fa-chevron-down"></i></h5>
+            <p class="destination-ans">Please choose your preferred destination.</p>
+            <h5 class="mode-help">Mode <i class="fas fa-chevron-down"></i></h5>
+            <p class="mode-ans">Please choose your preferred travel mode.</p>
+            <h5 class="departing-help">Departing <i class="fas fa-chevron-down"></i></h5>
+            <p class="departing-ans">Your departure date field must not be less than today's date and cannot be blank.</p>
+            <h5 class="returning-help">Returning <i class="fas fa-chevron-down"></i></h5>
+            <p class="returning-ans">Your returning date field must not be less than today's date and cannot be blank.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Help Section: Phase Three -->
+    <div id="help">
+      <button type="button" class="buttonthree">Need Help?</button>
+    </div>
+    <div class="bg-help phasethree-help">
+      <div class="help-content">
+        <div class="close">+</div>
+        <div class="helpThree">
+          <h4>Preferred Accommodation</h4>
+            <h5 class="accommodation-help">Accommodation <i class="fas fa-chevron-down"></i></h5>
+            <p class="accommodation-ans">Please choose your preferred accommodation.</p>
+            <h5 class="checkin-help">Checkin <i class="fas fa-chevron-down"></i></h5>
+            <p class="checkin-ans">Your check-in date field must not be less than today's date and cannot be blank.</p>
+            <h5 class="checkout-help">Checkout <i class="fas fa-chevron-down"></i></h5>
+            <p class="checkout-ans">Your check-out date field must not be less than today's date and cannot be blank.</p>
+        </div>
+      </div>
+    </div>
+        <!-- Phase One: Personal Details Form -->
+      <!-- <form method="POST" id="myform" action="submitted.html"> -->
+      <form id="myform">
+      <div id="form" class="phaseone">
+        <p class="title">Personal Details</p>
+          <div class="form-data">   
+            <div class="form-group">
+              <label for="title">Title
+              <span class="required" title="This field is required">*</span></label>
+              <select name="title" id="title">
+                <option value="default">Select title</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms</option>
+              </select>
+              <span id="titleError" class="error"></span>
+            </div>
+            <div class="form-group">
+              <label for="firstname">First Name
+              <span class="required" title="This field is required">*</span></label>
+              <input type="text" name="firstname" id="firstname" placeholder="First Name">
+              <span id="firstNameError" class="error"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name
+              <span class="required" title="This field is required">*</span></label>
+              <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+              <span id="lastNameError" class="error"></span>
+            </div>
+            <div class="form-group">
+              <label for="birthdate">Birth Date
+              <span class="required" title="This field is required">*</span></label>
+              <input type="date" name="birthdate" id="birthdate">
+              <span id="birthdateError" class="error"></span>
+            </div>
+            <div class="form-group">
+              <label for="occupation">Occupation
+              <span class="required" title="This field is required">*</span></label>
+              <input type="text" name="occupation" id="occupation" placeholder="Occupation">
+              <span id="occupationError" class="error"></span>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender
+              <span class="required" title="This field is required">*</span></label>
+              <select name="gender" id="gender">
+                <option value="default">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <span id="genderError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Budget
+                <span class="required" title="This field is required">*</span></label>
+                <select name="budget" id="budget">
+                  <option value="default">Budget</option>
+                  <option value="budget">$0-$1,000</option>
+                  <option value="budget">$1,000-$2,000</option>
+                  <option value="budget">$2,000-$3,000</option>
+                  <option value="budget">$3,000-$4,000</option>
+                  <option value="budget">$4,000-$5,000</option>
+                  <option value="budget">$5,000+</option>
+                </select>
+                <span id="budgetError" class="error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email
+                <span class="required" title="This field is required">*</span></label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <span id="emailError" class="error"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone
+                <span class="required" title="This field is required">*</span></label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone">
+                <span id="phoneError" class="error"></span>
+              </div>
+
+              <div class="form-subgroup">
+                <label for="travellers">Number of travellers
+                <span class="required" title="This field is required">*</span></label>
+                <input type="radio" name="travellers" id="onetraveller" value="one"> One
+                <input type="radio" name="travellers" id="twotravellers" value="two"> Two
+                <input type="radio" name="travellers" id="threetravellers" value="three"> Three
+                <input type="radio" name="travellers" id="moretravellers" value="moretravellers"> More
+                <span id="travellersError" class="error"></span>
+              </div>
+          
+
+            <div class="form-subgroup">
+              <label for="travelpartner">I am travelling with</label>
+              <input type="checkbox" name="travelpartner" id="partner" value="partner"> Partner
+              <input type="checkbox" name="travelpartner" id="children" value="children"> Children
+              <input type="checkbox" name="travelpartner" id="friends" value="friends"> Friends
+            </div> 
+
+
+            <!-- Hide Children Section -->
+            <div class="form-subgroup hidechildren">
+                <label for="children">Number of children</label>
+                <input type="radio" name="children" id="onechildren" value="one"> One
+                <input type="radio" name="children" id="twochildren" value="two"> Two
+                <input type="radio" name="children" id="threechildren" value="three"> Three
+                <input type="radio" name="children" id="morechildren" value="morechildren"> More
+                <span id="childrenError" class="error"></span>
+                </div>
+
+            <div class="form-subgroup">
+              <label for="dietaryrequirements">Do you have any dietary requirements?
+              <span class="required" title="This field is required">*</span></label>
+              <input type="radio" name="dietaryrequirements" id="yesrequirements" value="yes"> Yes
+              <input type="radio" name="dietaryrequirements" id="norequirements" value="no"> No
+              <span id="requirementsError" class="error"></span>
+            </div>
+            <!-- Hide Dietary -->
+            <div class="form-subgroup">
+              <div class="hidedietary">
+                <label for="dietary"></label>
+                <input type="checkbox" name="vegetarian" id="vegetarian" value="vegetarian"> Vegetarian
+                <input type="checkbox" name="vegan" id="vegan" value="vegan"> Vegan
+                <input type="checkbox" name="halal" id="halal" value="halal"> Halal
+                <input type="checkbox" name="kosher" id="kosher" value="kosher"> Kosher
+                <input type="checkbox" name="allergies" id="allergies" value="allergies"> Allergies
+              </div>
+            </div>
+
+            <div class="form-subgroup">
+              <label for="specialneeds">Do you have any special needs?
+              <span class="required" title="This field is required">*</span></label>
+              <input type="radio" name="specialneeds" id="yesneeds" value="yes"> Yes
+              <input type="radio" name="specialneeds" id="noneeds" value="no"> No
+              <span id="needsError" class="error"></span>
+              <!-- Hide Special Needs -->
+              <textarea name="needs" id="needs" cols="45" rows="3" placeholder="Please let us know your needs..."></textarea>
+            </div>
+
+          <div class="btn-next">
+            <button type="button" id="submit" class="btnPhaseOne">Next</button>
+          </div>   
+        </div>
+      </div>
+      
+          <!-- Phase Two: Preferred Destination Form -->
+          <div id="form" class="phasetwo">
+            <p class="title">Preferred Destinaion</p>
+            <div class="form-data">  
+              <div class="form-subgroup">
+                <label for="destination">Where would you like to go?
+                <span class="required" title="This field is required">*</span></label><br>
+                <input type="radio" name="destination" id="asia" value="asia"> Asia
+                <input type="radio" name="destination" id="africa" value="africa"> Africa
+                <input type="radio" name="destination" id="northamerica" value="northamerica"> North America
+                <input type="radio" name="destination" id="southamerica" value="southamerica"> South America
+                <input type="radio" name="destination" id="europe" value="europe"> Europe
+                <input type="radio" name="destination" id="oceania" value="oceania"> Oceania
+                <input type="radio" name="destination" id="europeanunion" value="europeanunion"> European Union
+                <span id="destinationError" class="error"></span>
+              </div>
+              <!-- Hide Asia -->
+              <div class="form-subgroup hideasia">
+                <label for="asia"></label>
+                <input type="checkbox" name="india" id="india" value="india"> India
+                <input type="checkbox" name="malaysia" id="malaysia" value="malaysia"> Malaysia
+                <input type="checkbox" name="japan" id="japan" value="japan"> Japan
+                <input type="checkbox" name="middle-east" id="middle-east" value="middle-east"> Middle East
+                <input type="checkbox" name="nepal" id="nepal" value="nepal"> Nepal
+              </div>
+              <!-- Hide Africa -->
+              <div class="form-subgroup hideafrica">
+                <label for="africa"></label>
+                <input type="checkbox" name="eastern" id="eastern" value="eastern"> Eastern
+                <input type="checkbox" name="middle" id="middle" value="middle"> Middle
+                <input type="checkbox" name="northern" id="northern" value="northern"> Northern
+                <input type="checkbox" name="western" id="western" value="western"> Western
+                <input type="checkbox" name="southern" id="southern" value="southern"> South
+              </div>
+
+              <!-- Hide North America -->
+              <div class="form-subgroup hidenorthamerica">
+                <label for="northamerica"></label>
+                <input type="checkbox" name="canada" id="canada" value="canada"> Canada
+                <input type="checkbox" name="centralamerica" id="centralamerica" value="centralamerica"> Central America
+                <input type="checkbox" name="mexico" id="mexico" value="mexico"> Mexico
+                <input type="checkbox" name="caribbean" id="caribbean" value="caribbean"> Caribbean
+              </div>
+
+              <!-- Hide South America -->
+              <div class="form-subgroup hidesouthamerica">
+                <label for="southamerica"></label>
+                <input type="checkbox" name="bolivia" id="bolivia" value="bolivia"> Bolivia
+                <input type="checkbox" name="peru" id="peru" value="peru"> Peru
+                <input type="checkbox" name="colombia" id="colombia" value="colombia"> Colombia
+                <input type="checkbox" name="venezeula" id="venezeula" value="venezeula"> Venezeula
+              </div>
+
+              <!-- Hide Europe -->
+              <div class="form-subgroup hideeurope">
+                <label for="europe"></label>
+                <input type="checkbox" name="russia" id="russia" value="russia"> Russia
+                <input type="checkbox" name="norway" id="norway" value="norway"> Norway
+                <input type="checkbox" name="uk" id="uk" value="uk"> U.K
+                <input type="checkbox" name="belarus" id="belarus" value="belarus"> Belarus
+                <input type="checkbox" name="iceland" id="iceland" value="iceland"> Iceland
+              </div>
+
+              <!-- Hide Oceania -->
+              <div class="form-subgroup hideoceania">
+                  <label for="oceania"></label>
+                  <input type="checkbox" name="samoa" id="samoa" value="samoa"> Samoa
+                  <input type="checkbox" name="micronesia" id="micronesia" value="micronesia"> Micronesia
+                  <input type="checkbox" name="australia" id="australia" value="australia"> Australia
+                  <input type="checkbox" name="new-zealand" id="new-zealand" value="new-zealand"> New Zealand
+                </div>
+
+              <!-- Hide European Union -->
+              <div class="form-subgroup hideeu">
+                  <label for="europeanunion"></label>
+                  <input type="checkbox" name="belgium" id="belgium" value="belgium"> Belgium
+                  <input type="checkbox" name="france" id="france" value="france"> France
+                  <input type="checkbox" name="spain" id="spain" value="spain"> Spain
+                  <input type="checkbox" name="sweden" id="sweden" value="sweden"> Sweden
+                  <input type="checkbox" name="ireland" id="ireland" value="ireland"> Ireland
+                </div>
+
+            <div class="form-group">
+              <label for="environment">Environment</label>
+              <input name="env-preference" id="env-preference" list="environment">
+              <datalist name="environment" id="environment">
+                <option value="Cities">
+                <option value="Country">
+                <option value="Natural">
+                <option value="Mountains">
+                <option value="Deserts">
+                <option value="Rain Forest">
+                <option value="Sea">
+                <option value="Coastal">
+                <option value="Inland">
+              </datalist>
+            </div>
+            <div class="form-subgroup">
+              <label for="mode">Travel Mode
+              <span class="required" title="This field is required">*</span></label>
+              <input type="radio" name="mode" id="airmode" value="air"> Air
+              <input type="radio" name="mode" id="landmode" value="land"> Land
+              <input type="radio" name="mode" id="watermode" value="water"> Water
+              <span id="travelModeError" class="error"></span>
+            </div>
+              <!-- Hide Air Mode -->
+              <div class="form-group hideairmode">
+                <label for="air">Air Mode</label>
+                <input name="airtransport" id="airtransport" list="air">
+                <datalist name="air" id="air">
+                  <option value="Jet">
+                  <option value="Turboprop">
+                  <option value="Aeroplane">
+                  <option value="Helicopter">
+                </datalist>
+              </div>
+              <!-- Hide Land Mode -->
+              <div class="form-group hidelandmode">
+                <label for="land">Land Mode</label>
+                <input name="landtransport" id="landtransport" list="land">
+                <datalist name="land" id="land">
+                  <option value="Car">
+                  <option value="Train">
+                  <option value="Bus">
+                  <option value="Bicycle">
+                </datalist>
+              </div>
+              <!-- Hide Water Mode -->
+              <div class="form-group hidewatermode">
+                <label for="water">Water Mode</label>
+                <input name="watertransport" id="watertransport" list="water">
+                <datalist name="water" id="water">
+                  <option value="Cruise">
+                  <option value="Sail">
+                  <option value="Barge">
+                  <option value="Boat">
+                </datalist>
+              </div>
+
+            <div class="form-group">
+              <label for="departing">Departing
+              <span class="required" title="This field is required">*</span></label>
+              <input type="date" name="departing" id="departing">
+              <span id="departingError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="returning">Returning
+                <span class="required" title="This field is required">*</span></label>
+                <input type="date" name="returning" id="returning">
+                <span id="returningError" class="error"></span>
+              </div>
+          </div>
+          <div class="btn">
+            <button type="button" id="submit" class="previousPhaseTwo">Previous</button>
+            <button type="button" id="submit" class="btnPhaseTwo">Next</button>
+          </div>
+          </div>
+
+
+          <!-- Phase Three: Preferred Accommodation Form-->
+          <div id="form" class="phasethree">
+            <p class="title">Preferred Accommodation</p>
+            <div class="form-data">   
+            <div class="form-subgroup">
+                <label for="accommodation">Where would you like to stay?
+                <span class="required" title="This field is required">*</span></label><br>
+                <input type="radio" name="accommodation" id="hotel" value="hotel"> Hotel
+                <input type="radio" name="accommodation" id="motel" value="motel"> Motel
+                <input type="radio" name="accommodation" id="hostel" value="hostel"> Hostel
+                <input type="radio" name="accommodation" id="airbnb" value="airbnb"> Airbnb
+                <span id="accommodationError" class="error"></span>
+              </div>
+              <!-- Hide Hotel -->
+              <div class="form-group hidehotel">
+                <label for="rating">Star Rating</label>
+                <select name="rating" id="rating">
+                  <option value="default">Rating</option>
+                  <option value="1 star">1 star</option>
+                  <option value="2 stars">2 stars</option>
+                  <option value="3 stars">3 stars</option>
+                  <option value="4 stars">4 stars</option>
+                  <option value="5 stars">5 stars</option>
+                  <option value="unrated">Unrated</option>
+                </select>
+              </div>
+              <div class="form-group hidehotel">
+                  <label for="roomtypes">Room Type</label>
+                  <select name="roomtypes" id="roomtypes">
+                    <option value="default">Room Types</option>
+                    <option value="singleroom">Single Room</option>
+                    <option value="sharedroom">Shared Room</option>
+                    <option value="familyroom">Family Room</option>
+                  </select>
+                </div>
+              <div class="form-subgroup hidehotel">
+                  <label for="facilities">Facilities</label>
+                  <input type="checkbox" name="facilities" id="parking" value="parking"> Parking
+                  <input type="checkbox" name="facilities" id="breakfast" value="breakfast"> Breakfast
+                  <input type="checkbox" name="facilities" id="freewifi" value="freewifi"> Free Wifi
+                  <input type="checkbox" name="facilities" id="gym" value="gym"> Gym
+                </div> 
+                <!-- Hide Motel -->
+                <div class="form-group hidemotel">
+                  <label for="review">Review Score</label>
+                  <select name="review" id="review">
+                    <option value="default">Review Score</option>
+                    <option value="wonderful">Wonderful: 9+</option>
+                    <option value="verygood">Very Good: 8+</option>
+                    <option value="good">Good: 7+</option>
+                    <option value="pleasant">Pleasant 6+</option>
+                    <option value="norating">No rating</option>
+                  </select>
+                  </div>
+                <div class="form-group hidemotel">
+                  <label for="roomtypes">Room Type</label>
+                  <select name="roomtypes" id="roomtypes">
+                    <option value="default">Room Types</option>
+                    <option value="singleroom">Single Room</option>
+                    <option value="sharedroom">Shared Room</option>
+                    <option value="familyroom">Family Room</option>
+                  </select>
+                </div>
+                <div class="form-subgroup hidemotel">
+                  <label for="facilities">Facilities</label>
+                  <input type="checkbox" name="facilities" id="parking" value="parking"> Parking
+                  <input type="checkbox" name="facilities" id="breakfast" value="breakfast"> Breakfast
+                  <input type="checkbox" name="facilities" id="freewifi" value="freewifi"> Free Wifi
+                  <input type="checkbox" name="facilities" id="gym" value="gym"> Gym
+                </div> 
+                <!-- Hide Hostel -->
+                  <div class="form-group hidehostel">
+                  <label for="review">Review Score</label>
+                  <select name="review" id="review">
+                    <option value="default">Review Score</option>
+                    <option value="wonderful">Wonderful: 9+</option>
+                    <option value="verygood">Very Good: 8+</option>
+                    <option value="good">Good: 7+</option>
+                    <option value="pleasant">Pleasant 6+</option>
+                    <option value="norating">No rating</option>
+                  </select>
+                  </div>
+                <div class="form-group hidehostel">
+                  <label for="roomtypes">Room Type</label>
+                  <select name="roomtypes" id="roomtypes">
+                    <option value="default">Room Types</option>
+                    <option value="dormroom">Dorm Room</option>
+                    <option value="privateroom">Private Room</option>
+                    <option value="sharedroom">Shared Room</option>
+                    <option value="familyroom">Family Room</option>
+                  </select>
+                </div>
+                <div class="form-subgroup hidehostel">
+                  <label for="facilities">Facilities</label>
+                  <input type="checkbox" name="facilities" id="parking" value="parking"> Parking
+                  <input type="checkbox" name="facilities" id="breakfast" value="breakfast"> Breakfast
+                  <input type="checkbox" name="facilities" id="freewifi" value="freewifi"> Wifi
+                  <input type="checkbox" name="facilities" id="kitchen" value="kitchen"> Kitchen
+                </div> 
+                <!-- Hide Airbnb -->
+                <div class="form-group hideairbnb">
+                    <label for="review">Review Score</label>
+                    <select name="review" id="review">
+                      <option value="default">Review Score</option>
+                      <option value="wonderful">Wonderful: 9+</option>
+                      <option value="verygood">Very Good: 8+</option>
+                      <option value="good">Good: 7+</option>
+                      <option value="pleasant">Pleasant 6+</option>
+                      <option value="norating">No rating</option>
+                    </select>
+                    </div>
+                  <div class="form-group hideairbnb">
+                    <label for="propertytypes">Property Type</label>
+                    <select name="propertytypes" id="propertytypes">
+                      <option value="default">Property Types</option>
+                      <option value="apartment">Apartment</option>
+                      <option value="privateroom">Private Room</option>
+                      <option value="sharedroom">Shared Room</option>
+                      <option value="house">House</option>
+                      <option value="homestay">Homestay</option>
+                    </select>
+                  </div>
+                  <div class="form-subgroup hideairbnb">
+                    <label for="facilities">Facilities</label>
+                    <input type="checkbox" name="facilities" id="parking" value="parking"> Parking
+                    <input type="checkbox" name="facilities" id="pets" value="pets"> Pets Friendly
+                    <input type="checkbox" name="facilities" id="freewifi" value="freewifi"> Free Wifi
+                  </div> 
+ 
+
+            <div class="form-group">
+              <label for="check-in">Check-In
+              <span class="required" title="This field is required">*</span></label>
+              <input type="date" name="check-in" id="checkin">
+              <span id="checkInError" class="error"></span>
+            </div>
+            <div class="form-group">
+              <label for="check-out">Check-Out
+              <span class="required" title="This field is required">*</span></label>
+              <input type="date" name="check-out" id="checkout">
+              <span id="checkOutError" class="error"></span>
+              </div> 
+   
+          </div>
+          <div class="btn">
+            <button type="button" id="submit" class="previousPhaseThree">Previous</button>
+            <button type="submit" id="submit" class="btnPhaseThree">Submit</button>
+          </div>
+          </div>
+      </form>
+    </div>   
+    </section>
+
+
+       <!-- Section: Continents -->
+  <section id="continents">
+    <div class="container">
+        <h1>Discover your destination</h1>
+      <div class="about-continents">
+        <div class="continents-container">
+          <div class="continent">
+            <img class="continent-img" src="images/asia.jpg" alt="Asia">
+          </div>
+          <div class="continent-name">
+            <h3><a href="https://en.wikipedia.org/wiki/Asia" target="_blank">Asia</a></h3>
+            <p>Asia, the world’s largest and most diverse continent. It occupies the eastern four-fifths of the giant Eurasian landmass. Asia is more a geographic term than a homogeneous continent, and the use of the term to describe such a vast area always .</p>
+          </div>
+        </div>
+        <div class="continents-container">
+          <div class="continent">
+            <img class="continent-img" src="images/europe.jpg" alt="Europe">
+          </div>
+          <div class="continent-name">
+            <h3><a href="https://en.wikipedia.org/wiki/Europe" target="_blank">Europe</a></h3>
+            <p>Europe, second smallest of the world’s continents, composed of the westward-projecting peninsulas of Eurasia (the great landmass that it shares with Asia) and occupying nearly one-fifteenth of the world’s total land area.</p>
+          </div>
+        </div>
+        <div class="continents-container">
+          <div class="continent">
+            <img class="continent-img" src="images/africa.jpg" alt="Africa">
+          </div>
+          <div class="continent-name">
+            <h3><a href="https://en.wikipedia.org/wiki/Africa" target="_blank">Africa</a></h3>
+            <p>Africa covers about one-fifth of the total land surface of Earth. The continent is bounded on the west by the Atlantic Ocean, on the north by the Mediterranean Sea, on the east by the Red Sea and the Indian Ocean, and on the south by the Atlantic and Indian oceans.</p>
+          </div>
+        </div>
+        <div class="continents-container">
+          <div class="continent">
+            <img class="continent-img" src="images/north_america.jpg" alt="North America">
+          </div>
+          <div class="continent-name">
+            <h3><a href="https://en.wikipedia.org/wiki/North_America" target="_blank">North America</a></h3>
+            <p>North America, third largest of the world’s continents, lying for the most part between the Arctic Circle and the Tropic of Cancer. It extends for more than 5,000 miles to within 500 miles of both the North Pole and the Equator.</p>
+          </div>
+        </div>
+        <div class="continents-container">
+          <div class="continent">
+            <img class="continent-img" src="images/south_america.jpg" alt="South America">
+          </div>
+          <div class="continent-name">
+            <h3><a href="https://en.wikipedia.org/wiki/South_America" target="_blank">South America</a></h3>
+            <p>South America is the fourth largest continent in size and the fifth largest in population. It is located primarily in the southern hemisphere. It is bordered by the Atlantic Ocean to the east and the Pacific Ocean to the west.</p>
+          </div>
+        </div>
+        <div class="continents-container">
+          <div class="continent">
+            <img class="continent-img" src="images/antarctica.jpg" alt="Antarctica">
+          </div>
+          <div class="continent-name">
+            <h3><a href="https://en.wikipedia.org/wiki/Antarctica" target="_blank">Antarctica</a></h3>
+            <p>Lying almost concentrically around the South Pole, Antarctica—the name of which means “opposite to the Arctic” is the southernmost continent, a circumstance that has had momentous consequences for all aspects of its character.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+      <p><span class="logo-text">Global</span> Adventures &copy; 2019, All Rights Reserved</p>
+  </footer>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

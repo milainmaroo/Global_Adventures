@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1 {
+  color: #006400;
+  font-size: 32px;
+}
+
+/* Utility Classes */
+.container {
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+}
+
+.logo-text {
+  color: #006400;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ 
+ .btn-next {
+   display: flex;
+   flex-direction: row-reverse;
+ }
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  z-index: 1;
+}
+
+#navbar .logo {
+  width: 3.5rem;
+  margin-right: 10px;
+}
+
+#navbar p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  background: #333;
+  color: #fff;
+  padding: 0.65rem;
+  margin: 0 0.25rem;
+  border-radius: 0.35rem;
+}
+
+#navbar ul li a:hover {
+  background: #006400;
+  border-radius: 0.35rem;
+}
+
+
+/* Showcase */
+#showcase {
+  background: #ececec;
+  color: #006400;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+
+.slider {
+  height: 25rem;
+  background: url("../images/img1.jpg") no-repeat center center/cover;
+  margin: 1.25rem;
+  animation: slide 20s infinite;
+}
+
+.contact {
+  margin: 1.25rem;
+  padding: 2rem;
+  background: #fff;
+}
+
+.contact h2 {
+  padding-bottom: 10px;
+}
+
+.contact ul li {
+  padding: 0.55rem;
+  border-bottom: 1px dotted #000;
+  font-size: 13px;
+}
+
+.contact ul li:last-child {
+  border: none;
+}
+
+.contact ul li a {
+  color: #000;
+}
+
+.contact ul li a:hover {
+  color: #006400;
+}
+
+@keyframes slide {
+  25% {
+    background: url("../images/img2.jpg") no-repeat center center/cover;
+  }
+  50% {
+    background: url("../images/img3.jpg") no-repeat center center/cover;
+  }
+  75% {
+    background: url("../images/img4.jpg") no-repeat center center/cover;
+  }
+  100% {
+    background: url("../images/img1.jpg") no-repeat center center/cover;
+  }
+}
+
+/* Information Section */
+#information {
+  background: url("../images/beach.jpg") no-repeat center center/cover;
+}
+
+#information p {
+  margin-bottom: 10px;
+}
+
+#information .preference {
+  font-size: 25px;
+  color: #006400;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Forms */
+#form {
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  margin: 0.75rem auto;
+  padding: 15px;
+  width: 26.875rem;
+  border-radius: 0.35rem;
+  font-size: 16px;
+  line-height: 2.4rem;
+}
+
+#form .form-group input, select, datalist {
+  margin-left: 6.5rem;
+}
+
+#form .form-group label {
+  position: absolute;
+}
+
+#form .form-subgroup input[type=checkbox],
+#form .form-subgroup input[type=radio] {
+  margin-left: 5px;
+}
+
+/* Personal Details Form */
+#form .title {
+  display: inline;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 19px;
+}
+
+.form-group input {
+  padding: 3px;
+  margin: 2px 0;
+}
+
+#form .required, #form .error {
+  font-size: 13px;
+  color: #ff0000;
+}
+
+/* Hide Dietary Requirements */
+.hidedietary {
+  display: none;
+}
+
+/* Hide Special Needs */
+#needs {
+  display: none;
+}
+
+/* Hide Children Section */
+.hidechildren {
+  display: none;
+}
+
+/* Hide Destination */
+.hideasia, .hideafrica, .hideamerica, .hidesouthamerica, .hidenorthamerica, .hideeurope, .hideoceania, .hideeu {
+  display: none;
+}
+
+/* Hide Travel Mode */
+.hideairmode, .hidelandmode, .hidewatermode {
+  display: none;
+}
+
+/* Hide Accommodation */
+.hidehotel, .hidemotel, .hidehostel, .hideairbnb {
+  display: none;
+}
+
+/* Hide Phases */
+.phasetwo, .phasethree {
+  display: none;
+}
+
+/* Submit */
+#submit, .buttonone, .buttontwo, .buttonthree {
+  font-size: 13px;
+  background: #006400;
+  color: #fff;
+  padding: 0.45rem 1rem;
+  margin: 0.25rem;
+  border-radius: 0.15rem;
+  cursor: pointer;
+}
+
+
+/* Continents */
+#continents {
+  background: #ececec;
+}
+
+#continents .continents-container {
+  width: 29%;
+  background: #fff;
+  margin: 1rem;
+}
+
+#continents .about-continents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#continents .continents-container img, h3, p {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+#continents .continents-container img {
+  height: 195px;
+}
+
+#continents .continents-container p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+#continents .continent-name {
+  padding: 0 1rem;
+}
+
+#continents .continent-name a {
+  color: #006400;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#continents .continent-name a:hover {
+  color: #333;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+
+/* Help Section */
+.buttonone, .buttontwo, .buttonthree {
+  display: none;
+}
+
+.bg-help {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 700px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  display: none;
+}
+
+.help-content {
+  width: 350px;
+  height: auto;
+  background: white;
+  color: black;
+  position: absolute;
+  left: 10px;
+  border-radius: 0.35rem;
+  padding: 10px;
+}
+
+.help-content h4 {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: #006400;
+  font-size: 20px;
+} 
+
+.help-content h5 {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.help-content p {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 28px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+
+/* Help Section */
+/* Personal Details */
+.firstname-ans, .lastname-ans, 
+.occupation-ans, .gender-ans, 
+.budget-ans, .email-ans, 
+.phone-ans, .dietary-ans, 
+.birthdate-ans, .needs-ans {
+  display: none;
+}
+
+/* Preferred Destination */
+.destination-ans, .mode-ans,
+.departing-ans, .returning-ans {
+  display: none;
+}
+
+/* Preferred Accommodation */
+.accommodation-ans, .checkin-ans, .checkout-ans {
+  display: none;
+}
+
+/* Submitted Page */
+body {
+  background: url("../images/beach.jpg") no-repeat center center/cover;
+}
+
+#submitted {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  padding: 200px;
+  line-height: 80px;
+}

@@ -1,0 +1,62 @@
+/* For Mobile Devices */
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+  /* Navbar */
+  #navbar ul {
+    margin-top: 5px;
+  }
+
+  /* Header: Showcase */
+  .slider {
+    display: none;
+  }
+
+  #showcase .showcase-container {
+    display: grid;
+    grid-template-columns: 4fr;
+  }
+
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  /* Help Section */
+  #help {
+    text-align: center;
+  }
+
+  .bg-help {
+    top: 20rem;
+  }
+
+  .help-content {
+    width: 18.75rem;;
+  }
+
+  /* Forms */
+  #form {
+    width: auto;
+  }
+
+  /* Continents */
+  #continents h1 {
+    text-align: center;
+  }
+
+  #continents .about-continents {
+    flex-direction: column;
+  }
+
+  #continents .continents-container {
+    width: auto;
+  }
+
+  #continents .about-continents h3 {
+    text-align: center;
+  }
+
+  /* Help Section: Personal Details */
+  .dietary-help, .needs-help {
+    display: none;
+  }
+
+}
